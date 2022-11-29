@@ -1,0 +1,1 @@
+This contains the documentation for running a combinational circuit on the FPGA, in our case, it's a JK Flip Flop. The procedure for organizing a JK Flip Flop is similar to that on Basys 3 FPGA board.
