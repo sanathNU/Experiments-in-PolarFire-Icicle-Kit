@@ -23,7 +23,5 @@ The structure of folders present in the repository are as follows.
 
 Things to be added:
 1. Introduction to the Board and Reference Design and what we plan to do with it.
-2. Booting up normally and the terminal according to all guides.
-3. Running the Basic Gates code
 4. Running the JK Flip Flop code for clocked circuits.
 5. Final implemntation of Convolution code?
