@@ -16,7 +16,7 @@ We are not adding HDL Sources and Constraints in this project, so just select th
 ### Lesson 2 - Creating the Design
 Following the steps from 1-4, we created a SmartDesignFile called BasicGates, which is as shown in the schematic
 
-![](./Images/Schematic.png)
+![image](https://user-images.githubusercontent.com/77428228/205487726-be9b7e55-cd3c-49d4-a15b-b5c743d278e3.png)
 
 We then complete step 6-9, which gives us the BasicGates file in Design Hierarchy tab. Make sure, that your design is set as root, as it important for the next step of synthesis.
 ### Lesson 3 - Synthesis and Pin Assignment
@@ -37,12 +37,41 @@ After the simulation, follow the steps from 1-3 as in the design guide. But from
 These are chosen specifically for the FPGA board, as mentioned in the MPFS-ICICLE-KIT-ES-Schematics.pdf in the main repository. In there, in page 13 and Bank 0, it in the mentioned about the 4 Switch inputs and 4 LED outputs.
 
 ![](./Images/IOAssignment.png)
+We are focusing only on this part of the board<br>
+![image](https://user-images.githubusercontent.com/77428228/205488464-462ac086-51f7-43b6-b8c2-31f24df9fd97.png)
+
 Complete step 7 and exit from the IO Constraint Editor. Complete step 8 and we will have completely finished the design and synthesis part. Only the hardware manipulation of the FPGA will be left out. This will be covered in the next steps.
 
 ### Lesson 4 - Programming the Design
+1. The jumper settings are to be left to default, as mentioned in [this](https://github.com/polarfire-soc/polarfire-soc-documentation/blob/master/boards/mpfs-icicle-kit-es/icicle-kit-user-guide/icicle-kit-user-guide.md) link, under the Jumpers section.
+2. Connect 12V power supply brick to the J29 connector.
+3. Connect a USB cable between the J33 mini USB connector and the host PC.
+4. After making sure, these are connected, run Program Action. After getting a green tick in front of it, your FPGA is programmed.
 
 ### Lesson 5 - Running the Design
+This is a pretty simple Circuit, that is used to show the functionality of the PolarFire Icicle Kit using Libero Programming SoC. The LEDs are active low.
+1. Switches 1 and 2 ( W18 and W19) are A and B inputs to the circuit. LEDs 1,2,3,4 map to AND, OR, NAND, XOR gates respectively.
+2. The combinations are represented in the table below, 1 means the switch is pressed and 0 means it is not.
+
+| Switch 1 | Switch 2 | LED 1 | LED 2 | LED 3 | LED 4 |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0 | 1 | 1 | 0 | 1 |
+| 0 | 1 | 1 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 0 | 0 | 0 |
+| 1 | 1 | 0 | 0 | 1 | 1 |
+
+TODO: Gif to be added
 
 ### Lesson 6 - Design Iterations in Libero SoC PolarFire
+As mentioned in the Guide, we can invert the inputs and get the inverted outputs. In our case, the table will be inverted.
+| Switch 1 | Switch 2 | LED 1 | LED 2 | LED 3 | LED 4 |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0 | 0 | 0 | 1 | 0 |
+| 0 | 1 | 0 | 1 | 1 | 1 |
+| 1 | 0 | 0 | 1 | 1 | 1 |
+| 1 | 1 | 1 | 1 | 0 | 1 |
 
+TODO: Gif to be added
 
+## Conclusion
+In the completion of this small tutorial, we learnt a lot about the board schematics and how to work with Libero SoC software. We had a good hardware experience, working on the board.
