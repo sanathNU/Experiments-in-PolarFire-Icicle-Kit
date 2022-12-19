@@ -55,12 +55,14 @@ This is a pretty simple Circuit, that is used to show the functionality of the P
 
 | Switch 1 | Switch 2 | LED 1 | LED 2 | LED 3 | LED 4 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| 0 | 0 | 1 | 1 | 0 | 1 |
-| 0 | 1 | 1 | 0 | 0 | 0 |
-| 1 | 0 | 1 | 0 | 0 | 0 |
-| 1 | 1 | 0 | 0 | 1 | 1 |
+| 0 | 0 | 1 | 1 | 0 | 0 |
+| 0 | 1 | 0 | 1 | 1 | 1 |
+| 1 | 0 | 0 | 1 | 1 | 1 |
+| 1 | 1 | 0 | 0 | 1 | 0 |
 
-TODO: Gif to be added
+Done: Gif added
+
+![Basic Gates 1](https://user-images.githubusercontent.com/77428228/208358924-401ce187-e192-49c5-9ade-a2b52f22269d.gif)
 
 ### Lesson 6 - Design Iterations in Libero SoC PolarFire
 As mentioned in the Guide, we can invert the inputs and get the inverted outputs. In our case, the table will be inverted.
@@ -69,9 +71,10 @@ As mentioned in the Guide, we can invert the inputs and get the inverted outputs
 | 0 | 0 | 0 | 0 | 1 | 0 |
 | 0 | 1 | 0 | 1 | 1 | 1 |
 | 1 | 0 | 0 | 1 | 1 | 1 |
-| 1 | 1 | 1 | 1 | 0 | 1 |
+| 1 | 1 | 1 | 1 | 0 | 0 |
 
-TODO: Gif to be added
+![Basic Gates 2](https://user-images.githubusercontent.com/77428228/208359066-bfa7e4a4-7025-4945-a659-50bddc0541ef.gif)
+
 
 ## Conclusion
 In the completion of this small tutorial, we learnt a lot about the board schematics and how to work with Libero SoC software. We had a good hardware experience, working on the board.
