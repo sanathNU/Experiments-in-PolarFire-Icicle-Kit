@@ -17,11 +17,10 @@ So, the basic softwares that have been installed on the computer to be developin
 * Libero SoftConsole (Version 2022.2-RISC-V-747)
 
 The structure of folders present in the repository are as follows.
-1. 'Hello World' folder covers the basic design of the FPGA and the running the 'out-of-the-box-linux-boot' of it. <br>
-2. 'Basic Gates' contains our running a small design for testing out simple combinational circuits on the Libero SoC Software.
-3. 'Combinational Circuit' contains a simple design and code for running a JK Flip Flop on the Board.
+1. **'Hello World'** folder covers the basic design of the FPGA and the running the 'out-of-the-box-linux-boot' of it. <br>
+2. **'Basic Gates'** contains our running a small design for testing out simple combinational circuits on the Libero SoC Software.
+3. **'Combinational Circuit'** contains a simple design and code for running a JK Flip Flop on the Board.
 
 Things to be added:
-1. Introduction to the Board and Reference Design and what we plan to do with it.
-4. Running the JK Flip Flop code for clocked circuits.
+
 5. Final implemntation of Convolution code?
