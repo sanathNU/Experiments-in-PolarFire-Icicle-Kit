@@ -26,6 +26,7 @@ Follow the steps 1 - 3 from step 3 of the developer tutorial website. The contst
 * K -> W19
 * Q -> T12
 * Qbar -> AB19
+
 We have set the Q and Qbar to LED 3 & 4. The clock out to LED 1. Switches W18 and W19 control J and K respectively. After completion, the I/O Constraint editor show be as follows.
 ![image](https://user-images.githubusercontent.com/77428228/208344070-7d8a207e-b0b4-466d-ac7e-68a9089e9b95.png)
 
