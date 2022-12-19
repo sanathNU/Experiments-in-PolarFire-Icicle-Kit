@@ -44,4 +44,8 @@ This has connections as mentioned.
 | 1 | 0 | 1 | 0 |
 | 1 | 1 | Toggle | Toggle |
 
-TODO: Should add working gif
+Done: Added gif
+
+![J K FF](https://user-images.githubusercontent.com/77428228/208359200-f10dcba0-94ba-415f-afb2-51cd9baaab00.gif)
+
+In the gif above, we can see that LED 1 is toggling at regular intervals, showing it's the changing clock. When the switch 1 and 2 are initiazed, the LEDs switch exactly as predicted. Hence, the FPGA is properly programmed to simulate a JK Flip Flop
