@@ -18,5 +18,30 @@ The RTL View of the hdl source code can be viewed using **'Design Flow Tab -> Im
 Should set the source file as root, as mentioned in steps 8-9 in the guide.
 ### Lesson 3 - Synthesis and Pin Assignment
 TODO: Run Testbench and update about the pre-simulation results
+Follow the steps 1 - 3 from step 3 of the developer tutorial website. The contstrains will be set seperately as this board is different as mentioned earlier. Set the Pin Configurations as follows:
+
+* Clk -> W12
+* Clk_out -> V14
+* J -> W18
+* K -> W19
+* Q -> T12
+* Qbar -> AB19
+We have set the Q and Qbar to LED 3 & 4. The clock out to LED 1. Switches W18 and W19 control J and K respectively. After completion, the I/O Constraint editor show be as follows.
+![image](https://user-images.githubusercontent.com/77428228/208344070-7d8a207e-b0b4-466d-ac7e-68a9089e9b95.png)
+
+Complete step 7 in the design guide and then exit the IO editor. This will conclude the IO constraints part.
 ### Lesson 4 - Programming the Design
+The programming part is the same as the previous project. Make sure that power supply is connected to the board and make sure that USB cable is connected to the J33 mini USB connector. The rest as the same as in the guide.
+
 ### Lesson 5 - Running the Design
+This has connections as mentioned.
+1. Switches 1 and 2 are J and K inputs. LED 1 is clock out. LED 2 and 3 are Q and Qbar respectively.
+
+| Switch 1 | Switch 2 | LED 3 | LED 4 |
+| :-: | :-: | :-: | :-: |
+| 0 | 0 | Latched | Latched |
+| 0 | 1 | 0 | 1 |
+| 1 | 0 | 1 | 0 |
+| 1 | 1 | Toggle | Toggle |
+
+TODO: Should add working gif
